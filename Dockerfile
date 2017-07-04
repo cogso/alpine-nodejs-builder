@@ -7,7 +7,9 @@ RUN apk add --quiet --no-cache bash git && \
     yarn global add gulp gulp-cli && \
     rm -rf /var/cache/* /tmp/*
 
+RUN mkdir /app
+
 # Define working directory.
-VOLUME ["/app"]
+# VOLUME ["/app"]
 
 WORKDIR /app
